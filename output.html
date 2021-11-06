@@ -1,0 +1,170 @@
+<style>
+    body {
+        --while-color: #ffffff;
+        --black-color: #000000;
+        --light-red: #f45a3b;
+        --light-grey: #999999;
+        --dark-grey: #666666;
+        --red-color: #ff0000;
+        --light-black: #222222;
+        --dark-white: #d8d8d8;
+    }
+
+    .container {
+        width: 1000px;
+        height: 1000px;
+    }
+
+    .flag {
+        padding: 61px;
+        position: relative;
+        color: var(--while-color);
+    }
+
+    .flag::after {
+        content: ''; 
+        position: absolute;
+        left: 290px; 
+        bottom: -20px;
+        border: 20px solid transparent;
+        border-right: 63px solid var(--light-red);
+    }
+
+    .stick {
+        width: 2px;
+        height: 317px;
+        background: var(--light-grey);
+        margin-left: 373px;
+        margin-top: -25px;
+        border: 1px solid var(--dark-grey);
+    }
+
+    .flagpole-top {
+        margin-left: 347px;
+    }
+
+    .flagpole-top__head-part {
+        height: 2px;
+        width: 52px;
+        background: var(--light-black);
+        border-radius: 6px 6px 0px 0px;
+        border: 1px solid var(--black-color);
+    }
+
+    .flagpole-top__lower-part {
+        height: 33px;
+        width: 52px;
+        background: var(--dark-grey);
+        border: 1px solid var(--black-color);
+    }
+
+    .flagpole-bottom {
+        height: 0;
+        width: 74px;
+        border-bottom: 55px solid var(--black-color);
+        border-left: 21px solid transparent;
+        margin-left: 311px;
+    }
+
+    .track-main__cover {
+        height: 49px;
+        width: 527px;
+        background: var(--dark-white);
+        display: block;
+        border-radius: 27% 120% 7% 23% / 245% 247% 6% 4%;
+        margin-left: 245px;
+    }
+
+    .track-main__interlayer {
+        height: 15px;
+        width: 541px;
+        background: var(--red-color);
+        margin-left: 237px;
+        border-radius: 7px;
+    }
+
+    .track-main__main-box {
+        height: 127px;
+        width: 518px;
+        background: var(--light-red);
+        border: 1px solid var(--red-color);
+        margin-left: 247px;
+        border-radius: 0px 0px 26px 26px;
+    }
+
+    .logo-bottom__foundation {
+        height: 108px;
+        width: 490px;
+        background: var(--light-black);
+        position: relative;
+        margin-left: 263px;
+    }
+
+    .logo-bottom__foundation:before {
+        content: '';
+        width: 466px;
+        height: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-bottom: 9px solid var(--light-black);
+        border-left: 12px solid var(--while-color);
+        border-right: 12px solid var(--while-color);
+    }
+
+    .logo-bottom__foundation:after {
+        content: '';
+        width: 356px;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        border-top: 66px solid var(--light-black);
+        border-left: 67px solid var(--while-color);
+        border-right: 67px solid var(--while-color);
+    }
+
+    .logo-bottom__wheels {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 273px;
+        margin-top: -71px;
+        width: 48%;
+    }
+
+    .wheel-item {
+        width: 127px;
+        height: 127px;
+        background: var(--black-color);
+        border-radius: 60px;
+        z-index: 1;
+    }
+</style>
+<body>  
+    <div class="container">
+        <div class="logo-head">
+            <div class="flag"></div>
+            <div class="stick"></div>
+            <div class="flagpole-top">
+                <div class="flagpole-top__head-part"></div>
+                <div class="flagpole-top__lower-part"></div>
+            </div>
+            <div class="flagpole-bottom"></div>
+        </div>
+        <div class="track-main">
+            <div class="track-main__cover"></div>
+            <div class="track-main__interlayer"></div>
+            <div class="track-main__main-box"></div>
+        </div>
+        <div class="logo-bottom">
+            <div class="logo-bottom__foundation"></div>
+            <div class="logo-bottom__wheels">
+                <div class="wheel-item"></div>
+                <div class="wheel-item"></div>
+                <div class="wheel-item"></div>
+            </div>
+        </div>
+    </div>
+</body>
